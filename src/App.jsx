@@ -182,6 +182,7 @@ const App = () => {
               {libraries.map((library) => (
                 <option key={library.id} value={library.id}>
                   {library.name}
+                {  console.debug(library.id)}
                 </option>
               ))}
             </select>
@@ -194,7 +195,7 @@ const App = () => {
             </button>
           </div>
         )}
-      
+
         {/* {newAccessToken ? (
           <button
             onClick={handleLogout}
